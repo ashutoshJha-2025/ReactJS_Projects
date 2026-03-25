@@ -5,5 +5,5 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: "/React-Projects/01_ThemeToggle/"
+  base: '/ReactJS_Projects/01_ThemeToggle/'
 })
