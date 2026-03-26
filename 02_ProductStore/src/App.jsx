@@ -1,11 +1,20 @@
+import { Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Cart from "./pages/Cart";
+import Wishlist from "./pages/Wishlist";
 
 
 function App() {
   return (
     <>
-      <h1 class="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+      <Navbar />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/wishlist" element={<Wishlist />} />
+      </Routes>
     </>
   )
 }
