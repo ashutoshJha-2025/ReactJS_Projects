@@ -2,7 +2,7 @@ import { useState } from "react"
 import favoriteBlack from "../assets/favorite_bw.svg"
 import favoriteRed from "../assets/favorite_fill.svg"
 
-function Card({ title, price, rating, img,color }) {
+function Card({ title, price, rating, img, color }) {
     const [fill, setFill] = useState(false)
     const changeLogo = () => {
         setFill((prev) => {
@@ -17,7 +17,7 @@ function Card({ title, price, rating, img,color }) {
         <>
             <div style={{ backgroundColor: color }} className="w-75 h-115 rounded-2xl relative shadow-xl">
                 <div className="bg-white w-full absolute bottom-2 h-[93%] rounded-b-2xl rounded-t-[56px] flex flex-col items-center">
-                    <h1 style={{ Color: color }} className="max-sm:text-sm text-xl font-bold mt-4 px-2 text-center">{title}</h1>
+                    <h1 className="max-sm:text-sm text-lg font-bold mt-4 px-4 text-center">{title}</h1>
 
                     <div className="w-[90%] h-50 rounded-2xl overflow-hidden absolute bottom-30">
                         <img

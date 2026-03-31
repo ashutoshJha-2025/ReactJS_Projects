@@ -23,7 +23,7 @@ function Navbar() {
 
     return (
         <>
-            <header className="flex justify-between items-center p-3 border-(--border) border-b-2 sticky">
+            <header className="flex justify-between items-center p-3 border-(--border) border-b-2">
                 <div className="ml-2">
                     <h1 className="font-bold text-xl lg:text-3xl text-(--text)">Ash Mart</h1>
                 </div>
