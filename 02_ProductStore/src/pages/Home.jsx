@@ -28,6 +28,7 @@ function Home() {
                         products.map((item, index) => (
                             <Card
                                 key={item.id}
+                                id={item.id}
                                 title={item.title}
                                 price={item.price}
                                 rating={Math.floor(item.rating)}

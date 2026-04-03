@@ -1,17 +1,26 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import favoriteBlack from "../assets/favorite_bw.svg"
 import favoriteRed from "../assets/favorite_fill.svg"
+import { useWishlist } from "../context/WishlistContext"
 
-function Card({ title, price, rating, img, color }) {
+function Card({ id, title, price, rating, img, color }) {
+    const { likeItems, addWishlist, removeWishlist } = useWishlist()
     const [fill, setFill] = useState(false)
-    const changeLogo = () => {
-        setFill((prev) => {
-            const next = !prev
-            return next;
-        })
-    }
-
     const [count, setCount] = useState(1)
+
+    useEffect(() => {
+        const isInWishlist = likeItems.some(item => item.id === id)
+        setFill(isInWishlist)
+    }, [likeItems, id])
+
+    const toggleWishlist = () => {
+        if (fill) {
+            removeWishlist(id)
+        } else {
+            addWishlist({ id, title, price, rating, img, color })
+        }
+        setFill(!fill)
+    }
 
     return (
         <>
@@ -59,7 +68,7 @@ function Card({ title, price, rating, img, color }) {
                         src={fill ? favoriteRed : favoriteBlack}
                         alt="favorite"
                         className="cursor-pointer"
-                        onClick={changeLogo}
+                        onClick={toggleWishlist}
                     />
 
                 </div>
