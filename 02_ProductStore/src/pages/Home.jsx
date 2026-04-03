@@ -7,14 +7,14 @@ function Home() {
 
     const fetchData = async () => {
         try {
-            const response = await fetch('https://fakestoreapi.com/products')
+            const response = await fetch('https://dummyjson.com/products')
             const data = await response.json()
-            setProducts(data)
+            setProducts(data.products)
         } catch (error) {
             console.log("something went wrong\n", error)
         }
     }
-
+console.log(products)
     useEffect(() => {
         fetchData()
     }, [])
@@ -22,17 +22,24 @@ function Home() {
     return (
         <>
             <div className="w-full h-auto p-10 flex flex-wrap gap-5">
+
                 {
-                    products.map((item, index) => (
-                        <Card
-                            key={item.id}
-                            title={item.title}
-                            price={item.price}
-                            rating={item.rating.rate}
-                            img={item.image}
-                            color={colors[index % colors.length]}
-                        />
-                    ))}
+                    products && products.length > 0 ? (
+                        products.map((item, index) => (
+                            <Card
+                                key={item.id}
+                                title={item.title}
+                                price={item.price}
+                                rating={item.rating.rate}
+                                img={item.images[0]}
+                                color={colors[index % colors.length]}
+                            />
+                        ))
+                    ) : (
+                        <h1 className="text-2xl font-bold text-(--accent)">Product Unavailable</h1>
+                    )
+                }
+
             </div>
         </>
     )
