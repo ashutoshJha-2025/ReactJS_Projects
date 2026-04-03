@@ -7,8 +7,6 @@ import Wishlist from "./pages/Wishlist";
 function App() {
   return (
     <>
-
-
       <Navbar />
 
       <Routes>
@@ -16,7 +14,6 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/wishlist" element={<Wishlist />} />
       </Routes>
-
     </>
   )
 }

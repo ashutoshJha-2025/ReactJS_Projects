@@ -14,7 +14,7 @@ function Home() {
             console.log("something went wrong\n", error)
         }
     }
-console.log(products)
+
     useEffect(() => {
         fetchData()
     }, [])
@@ -30,7 +30,7 @@ console.log(products)
                                 key={item.id}
                                 title={item.title}
                                 price={item.price}
-                                rating={item.rating.rate}
+                                rating={Math.floor(item.rating)}
                                 img={item.images[0]}
                                 color={colors[index % colors.length]}
                             />
