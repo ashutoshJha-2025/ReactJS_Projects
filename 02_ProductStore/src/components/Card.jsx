@@ -2,9 +2,11 @@ import { useState, useEffect } from "react"
 import favoriteBlack from "../assets/favorite_bw.svg"
 import favoriteRed from "../assets/favorite_fill.svg"
 import { useWishlist } from "../context/WishlistContext"
+import { useCart } from "../context/CartContext"
 
 function Card({ id, title, price, rating, img, color }) {
     const { likeItems, addWishlist, removeWishlist } = useWishlist()
+    const { addToCart } = useCart()
     const [fill, setFill] = useState(false)
     const [count, setCount] = useState(1)
 
@@ -22,6 +24,9 @@ function Card({ id, title, price, rating, img, color }) {
         setFill(!fill)
     }
 
+    const addCart = () => {
+        addToCart({ id, title, price, img, count })
+    }
     return (
         <>
             <div style={{ backgroundColor: color }} className="w-75 h-115 rounded-2xl relative shadow-xl">
@@ -60,7 +65,9 @@ function Card({ id, title, price, rating, img, color }) {
                         </div>
                     </div>
                 </div>
-                <div className="bg-yellow-500 absolute bottom-0 w-full h-13 rounded-b-2xl flex items-center justify-around">
+                <div 
+                onClick={addCart}
+                className="bg-yellow-500 absolute bottom-0 w-full h-13 rounded-b-2xl flex items-center justify-around">
                     <h1 className="text-2xl font-bold font-mono cursor-pointer active:scale-98 transition-transform duration-500 ease-in">
                         ADD TO CART
                     </h1>

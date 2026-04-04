@@ -1,15 +1,7 @@
 import { createContext, useContext } from "react";
 
 export const WishlistContext = createContext({
-    likeItems: [
-        {
-            id: 1,
-            title: "lipstick",
-            price: 9.99,
-            rating: 4,
-            img: "dkncdnk",
-        },
-    ],
+    likeItems: [],
 
     addWishlist: (product) => { } ,
     removeWishlist: (id) => { }
