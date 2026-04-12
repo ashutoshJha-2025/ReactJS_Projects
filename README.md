@@ -16,6 +16,6 @@
 * Used **React Context API** for global state management
 
 
-# 🛒 3. Ashmart (In Progress)
+# 🛒 3. Ashmart 
 
 **Live Link / Repo:** https://ashutoshjha-2025.github.io/ReactJS_Projects/02_ProductStore/
