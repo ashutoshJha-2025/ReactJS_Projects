@@ -1,0 +1,203 @@
+[
+  {
+    "food_name": "masala dosa",
+    "image_url": "https://images.unsplash.com/photo-1743517894265-c86ab035adef?q=80&w=782&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "price": 120,
+    "category_id": {
+      "category_name": "Breakfast"
+    },
+    "food_type": "Veg",
+    "is_available": true
+  },
+  {
+    "food_name": "aloo paratha",
+    "image_url": "https://media.istockphoto.com/id/1432760289/photo/aloo-paratha-or-potato-stuffed-flat-bread-on-a-wooden-background-served-with-curd-and-sauce.jpg?s=1024x1024&w=is&k=20&c=ZIGUSo9IA-q2AHWc-cPBFddz8U-I46-VU-3QVrmL49I=",
+    "price": 100,
+    "category_id": {
+      "category_name": "Breakfast"
+    },
+    "food_type": "Veg",
+    "is_available": true
+  },
+  {
+    "food_name": "chicken omelette",
+    "image_url": "https://plus.unsplash.com/premium_photo-1667807521536-bc35c8d8b64b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2hpY2tlbiUyMG9tbGV0dGV8ZW58MHx8MHx8fDA%3D",
+    "price": 140,
+    "category_id": {
+      "category_name": "Main Course"
+    },
+    "food_type": "Non-Veg",
+    "is_available": true
+  },
+  {
+    "food_name": "paneer butter masala",
+    "image_url": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "price": 260,
+    "category_id": {
+      "category_name": "Main Course"
+    },
+    "food_type": "Veg",
+    "is_available": true
+  },
+  {
+    "food_name": "chicken curry",
+    "description": null,
+    "image_url": "https://images.unsplash.com/photo-1708782344490-9026aaa5eec7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2hpY2tlbiUyMGN1cnJ5fGVufDB8fDB8fHww",
+    "price": 320,
+    "category_id": {
+      "category_name": "Main Course"
+    },
+    "food_type": "Non-Veg",
+    "is_available": false
+  },
+  {
+    "food_name": "dal tadka",
+    "image_url": "https://images.unsplash.com/photo-1755090154817-58d9d36ec988?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZGFsJTIwdGFka2F8ZW58MHx8MHx8fDA%3D",
+    "price": 180,
+    "category_id": {
+      "category_name": "Main Course"
+    },
+    "food_type": "Veg",
+    "is_available": true
+  },
+  {
+    "food_name": "gulab jamun",
+    "image_url": "https://media.istockphoto.com/id/163064596/photo/gulab-jamun.webp?a=1&b=1&s=612x612&w=0&k=20&c=F_5_AgCdrsecO13W-wiuCZAwYZPBpN3UETTyYtQQlLM=",
+    "price": 80,
+    "category_id": {
+      "category_name": "Dessert"
+    },
+    "food_type": "Veg",
+    "is_available": true
+  },
+  {
+    "food_name": "chocolate brownie",
+    "image_url": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "price": 150,
+    "category_id": {
+      "category_name": "Dessert"
+    },
+    "food_type": "Veg",
+    "is_available": true
+  },
+  {
+    "food_name": "mango shake",
+    "image_url": "https://images.unsplash.com/photo-1525385133512-2f3bdd039054?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWFuZ28lMjBzaGFrZXxlbnwwfHwwfHx8MA%3D%3D",
+    "price": 110,
+    "category_id": {
+      "category_name": "Beverage"
+    },
+    "food_type": "Veg",
+    "is_available": true
+  },
+  {
+    "food_name": "cold coffee",
+    "image_url": "https://images.unsplash.com/photo-1710811891354-163b00ebcc74?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29sZCUyMGNvZmZlZXxlbnwwfDJ8MHx8fDA%3D",
+    "price": 130,
+    "category_id": {
+      "category_name": "Beverage"
+    },
+    "food_type": "Veg",
+    "is_available": true
+  },
+  {
+    "food_name": "greek salad",
+    "image_url": "https://images.unsplash.com/photo-1574031491550-35f444917508?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Z3JlZW4lMjBzYWxhZHxlbnwwfDJ8MHx8fDA%3D",
+    "price": 170,
+    "category_id": {
+      "category_name": "Salad"
+    },
+    "food_type": "Veg",
+    "is_available": true
+  },
+  {
+    "food_name": "chicken caesar salad",
+    "image_url": "https://images.unsplash.com/photo-1580013759032-c96505e24c1f?q=80&w=1509&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "price": 240,
+    "category_id": {
+      "category_name": "Salad"
+    },
+    "food_type": "Non-Veg",
+    "is_available": false
+  },
+  {
+    "food_name": "veg burger",
+    "image_url": "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dmVnJTIwYnVyZ2VyfGVufDB8MnwwfHx8MA%3D%3D",
+    "price": 150,
+    "category_id": {
+      "category_name": "Fast Food"
+    },
+    "food_type": "Veg",
+    "is_available": true
+  },
+  {
+    "food_name": "chicken burger",
+    "image_url": "https://media.istockphoto.com/id/2239902167/photo/crispy-fried-chicken-zinger-burger-with-creamy-sauce-lettuce-and-tomato-on-yellow-board-side.webp?a=1&b=1&s=612x612&w=0&k=20&c=XU1d8sLyccl8Tts2Y4xgGpWrJgmyVUhLygvoDEbB5xQ=",
+    "price": 220,
+    "category_id": {
+      "category_name": "Fast Food"
+    },
+    "food_type": "Non-Veg",
+    "is_available": true
+  },
+  {
+    "food_name": "french fries",
+    "image_url": "https://images.unsplash.com/photo-1736378911571-552a82aec571?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGZyZW5jaCUyMGZyaWVzfGVufDB8MnwwfHx8MA%3D%3D",
+    "price": 120,
+    "category_id": {
+      "category_name": "Fast Food"
+    },
+    "food_type": "Veg",
+    "is_available": true
+  },
+  {
+    "food_name": "tomato soup",
+    "image_url": "https://images.unsplash.com/photo-1708782340380-536df8cf6784?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dG9tYXRvJTIwc291cHxlbnwwfDJ8MHx8fDA%3D",
+    "price": 110,
+    "category_id": {
+      "category_name": "Soup"
+    },
+    "food_type": "Veg",
+    "is_available": true
+  },
+  {
+    "food_name": "chicken hot & sour soup",
+    "image_url": "https://images.unsplash.com/photo-1708782344490-9026aaa5eec7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Q2hpY2tlbiUyMEhvdCUyMCUyNiUyMFNvdXIlMjBTb3VwfGVufDB8MnwwfHx8MA%3D%3D",
+    "price": 180,
+    "category_id": {
+      "category_name": "Soup"
+    },
+    "food_type": "Non-Veg",
+    "is_available": true
+  },
+  {
+    "food_name": "veg fried rice",
+    "image_url": "https://media.istockphoto.com/id/1292617507/photo/tasty-veg-schezwan-fried-rice-served-in-bowl-over-a-rustic-wooden-background-indian-cuisine.jpg?s=1024x1024&w=is&k=20&c=60YzuiCFBz2QB7mser7keOO7Z4LsBNHFsKkLy_TyRNY=",
+    "price": 190,
+    "category_id": {
+      "category_name": "Rice"
+    },
+    "food_type": "Veg",
+    "is_available": true
+  },
+  {
+    "food_name": "chicken biryani",
+    "image_url": "https://images.unsplash.com/photo-1708782345014-db93ddd5608f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hpY2tlbiUyMGJpcnlhbml8ZW58MHwyfDB8fHww",
+    "price": 350,
+    "category_id": {
+      "category_name": "Rice"
+    },
+    "food_type": "Non-Veg",
+    "is_available": true
+  },
+  {
+    "food_name": "butter naan",
+    "image_url": "https://media.istockphoto.com/id/1656591642/photo/indian-bread-roti-on-the-plate-in-wood-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=ODzEV2WVDk5yg3uxoE2S5ep8mmVgq13LodgD13mNYvc=",
+    "price": 50,
+    "category_id": {
+      "category_name": "Breads"
+    },
+    "food_type": "Veg",
+    "is_available": true
+  }
+]
