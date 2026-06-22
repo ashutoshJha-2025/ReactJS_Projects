@@ -7,7 +7,7 @@ function CartRow({ item }) {
     const itemId = item._id || `${item.food_name}-${item.category_id?.category_name || "item"}`;
 
     return (
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 py-5 px-1 border-b border-(--border-color) last:border-b-0">
+        <div className="max-[400px]:w-60 flex  flex-col sm:flex-row sm:items-center justify-between gap-4 py-5 px-1 border-b border-(--border-color) last:border-b-0">
             <div className="flex gap-4 items-center flex-1 min-w-0">
                 <div className="min-w-0">
                     <div className="flex items-center gap-2">
@@ -95,7 +95,7 @@ const CartPage = () => {
 
     return (
         <div className="w-full min-h-screen flex justify-center items-start">
-            <div className="w-[60%] min-h-screen bg-purple-00 text-white p-5">
+            <div className="w-150 min-h-screen bg-purple-00 text-white p-5">
                 <button
                     className="text-md font-medium bg-(--color-secondary) px-3 py-1 rounded-lg cursor-pointer mb-5 hover:bg-[#ff8442]"
                     onClick={() => navigate('/')}
@@ -138,7 +138,7 @@ const CartPage = () => {
                 <div className="flex gap-4 mt-6">
                     <button
                         onClick={() => dispatch(clearCart())}
-                        className="flex-1 bg-(--color-primary) text-(--text-on-primary) font-bold py-4 rounded-md hover:opacity-90 transition-(--transition-fast) cursor-pointer"
+                        className="flex-1 bg-(--color-primary) text-(--text-on-primary) font-bold py-0 rounded-md hover:opacity-90 transition-(--transition-fast) cursor-pointer"
                     >
                         Clear Cart
                     </button>

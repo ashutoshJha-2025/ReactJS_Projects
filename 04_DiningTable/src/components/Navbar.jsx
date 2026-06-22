@@ -25,12 +25,12 @@ const Navbar = () => {
         setTheme(prev => (prev === "dark" ? "light" : "dark"));
     };
 
-    const buttonClass = 'py-1.5 px-3.5 rounded-2xl text-sm font-medium cursor-pointer transition-all duration-200 ease-in-out font-sans text-(--text-primary) '
+    const buttonClass = 'py-1.5 px-3.5 max-sm:hidden rounded-2xl text-sm font-medium cursor-pointer transition-all duration-200 ease-in-out font-sans text-(--text-primary) '
     const activeClass = 'bg-(--color-secondary)  text-white'
 
     return (
         <nav className='sticky top-0 z-100 bg-(--bg-secondary) border-(--border-color) border-b-2 px-8 flex items-center justify-between h-16 w-full'>
-            <div className='font-bold text-3xl text-(--color-secondary)'>
+            <div className='font-bold text-3xl max-md:text-xl max-sm:text-lg text-(--color-secondary)'>
                 Dining
                 <span className='text-(--text-primary)'>Table</span>
             </div>
@@ -40,14 +40,14 @@ const Navbar = () => {
                     <button
                         key={index}
                         onClick={() => dispatch(setActiveTab(tab))}
-                        className={`${buttonClass} ${activeTab === tab ? activeClass : ""}`}
+                        className={`${buttonClass} ${activeTab === tab ? activeClass : ""} ${tab === 'Main Course' ? 'max-md:hidden' : ''}`}
                     >
                         {tab}
                     </button>
                 ))}
             </div>
 
-            <div className='flex gap-8 items-center justify-around'>
+            <div className='flex gap-8 max-sm:gap-2 items-center justify-around'>
                 <button
                     onClick={toggleTheme}
                     className={`${theme === 'light' ? 'bg-[#2A2D3E]' : 'bg-white'} p-2  rounded-full flex justify-center items-center transition-(--transition-base) cursor-pointer overflow-hidden`}>
