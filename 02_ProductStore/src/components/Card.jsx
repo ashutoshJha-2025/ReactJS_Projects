@@ -65,19 +65,27 @@ function Card({ id, title, price, rating, img, color }) {
                         </div>
                     </div>
                 </div>
-                <div 
-                onClick={addCart}
-                className="bg-yellow-500 absolute bottom-0 w-full h-13 rounded-b-2xl flex items-center justify-around">
-                    <h1 className="text-2xl font-bold font-mono cursor-pointer active:scale-98 transition-transform duration-500 ease-in">
+                <div className="bg-yellow-500 absolute bottom-0 w-full h-13 rounded-b-2xl flex items-center justify-around">
+                    <button
+                        type="button"
+                        onClick={addCart}
+                        className="bg-red-500 text-2xl font-bold font-mono cursor-pointer active:scale-98 transition-transform duration-500 ease-in"
+                    >
                         ADD TO CART
-                    </h1>
-                    <img
-                        src={fill ? favoriteRed : favoriteBlack}
-                        alt="favorite"
+                    </button>
+                    <button
+                        type="button"
+                        onClick={(event) => {
+                            event.stopPropagation()
+                            toggleWishlist()
+                        }}
                         className="cursor-pointer"
-                        onClick={toggleWishlist}
-                    />
-
+                    >
+                        <img
+                            src={fill ? favoriteRed : favoriteBlack}
+                            alt="favorite"
+                        />
+                    </button>
                 </div>
             </div>
         </>
