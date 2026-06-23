@@ -69,7 +69,7 @@ function Card({ id, title, price, rating, img, color }) {
                     <button
                         type="button"
                         onClick={addCart}
-                        className="bg-red-500 text-2xl font-bold font-mono cursor-pointer active:scale-98 transition-transform duration-500 ease-in"
+                        className="text-2xl font-bold font-mono cursor-pointer active:scale-98 transition-transform duration-500 ease-in"
                     >
                         ADD TO CART
                     </button>
